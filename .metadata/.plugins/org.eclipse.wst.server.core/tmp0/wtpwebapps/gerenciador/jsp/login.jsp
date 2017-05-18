@@ -245,8 +245,8 @@ function testLocalStorageData() {
             
             <form class="form-signin" action="j_security_check" method="post">
                 <span id="reauth-email" class="reauth-email"></span>
-                <input id="j_username" name="j_username" type="text" class="form-control" placeholder="Usuário" required autofocus>
-                <input id="j_password" name="j_password" type="password" class="form-control" placeholder="Senha" required>
+                <input id="j_username" name="j_username" type="text" class="form-control">
+                <input id="j_password" name="j_password" type="password" class="form-control">
                 
                	<input class="btn btn-lg btn-primary btn-block btn-signin" type="submit" value="Enviar">
             </form><!-- /form -->

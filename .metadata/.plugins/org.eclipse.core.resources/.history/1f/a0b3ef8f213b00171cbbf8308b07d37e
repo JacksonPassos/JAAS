@@ -1,0 +1,28 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <style type="text/css">
+			body {
+			margin:0;
+			padding:0;
+			text-align:center;
+			}
+		</style>
+        <title>JSP Page</title>
+    </head>
+    <body>
+    
+    <div class="jumbotron">
+	  <h1>Bem vindo!</h1>
+	  <p>Quem é você?</p>
+	  <div class="container">
+	  <h3><a href="admin/restricted.jsp">Administrador</a></h3>
+      <h3><a href="user/allowed.jsp">Usuário</a></h3>
+	  </div>
+	</div>
+       
+    </body>
+</html>

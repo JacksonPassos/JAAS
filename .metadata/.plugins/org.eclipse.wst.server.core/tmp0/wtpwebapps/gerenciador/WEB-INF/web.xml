@@ -3,21 +3,13 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
-	<display-name>gerenciador</display-name>
-	
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
 	
 	<welcome-file-list>
 		<welcome-file>/jsp/index.jsp</welcome-file>
 	</welcome-file-list>
-
-	
-	<servlet>
-		<servlet-name>index</servlet-name>
-		<jsp-file>/index.jsp</jsp-file>
-	</servlet>
-	<session-config>
-		<session-timeout>30</session-timeout>
-	</session-config>
 		
 	<!-- MÉTODO DE LOGIN -->
 	<login-config>
@@ -29,32 +21,31 @@
 	</login-config>
 		
 	<!-- ROLES DE SEGURANÇA -->
-	
-	<security-role>
-		<role-name>manager</role-name>
-	</security-role>
-		
 	<security-constraint>
-		<web-resource-collection>
-			<url-pattern>/admin/*</url-pattern>
-		</web-resource-collection>
-		<auth-constraint>
-			<role-name>manager</role-name>
-		</auth-constraint>
-	</security-constraint>
-		
-	<security-role>
-		<role-name>user</role-name>
-	</security-role>
-		
+        <web-resource-collection>
+            <web-resource-name>paginas admnistrativas</web-resource-name>
+            <url-pattern>/admin/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+
+        <auth-constraint>
+            <role-name>manager</role-name>
+        </auth-constraint>
+    </security-constraint>
+
 	<security-constraint>
-		<web-resource-collection>
-			<url-pattern>/user/*</url-pattern>
-		</web-resource-collection>
-		
-		<auth-constraint>
-			<role-name>user</role-name>
-		</auth-constraint>
-	</security-constraint>
+        <web-resource-collection>
+            <web-resource-name>paginas para usuários</web-resource-name>
+            <url-pattern>/user/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+
+        <auth-constraint>
+            <role-name>user</role-name>
+        </auth-constraint>
+    </security-constraint>
+    
 	
 </web-app>

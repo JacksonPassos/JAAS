@@ -110,8 +110,6 @@
              available for use by the Realm.  -->
         <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
       </Realm>
-      
-       <Realm className="org.apache.catalina.realm.JDBCRealm" connectionName="root" connectionPassword="" connectionURL="jdbc:mysql://localhost:3306/jaas" digest="MD5" driverName="org.gjt.mm.mysql.Driver" roleNameCol="pap_descricao" userCredCol="usu_pass" userNameCol="usu_login" userRoleTable="usupap" userTable="usuarios"/>
 
       <Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true">
 
@@ -127,6 +125,7 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
       <Context docBase="E:\JAAS\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\JAAS\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\gerenciador" path="/gerenciador" reloadable="true" source="org.eclipse.jst.jee.server:gerenciador"/><Context docBase="E:\JAAS\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\project-to-learn-jaas-complete" path="/project-to-learn-jaas-complete" reloadable="true" source="org.eclipse.jst.jee.server:project-to-learn-jaas-complete"/></Host>
+      <Realm className="org.apache.catalina.realm.JDBCRealm" connectionName="root" connectionPassword="" connectionURL="jdbc:mysql://localhost:3306/jaas" digest="MD5" driverName="org.gjt.mm.mysql.Driver" roleNameCol="pap_descricao" userCredCol="usu_pass" userNameCol="usu_login" userRoleTable="usupap" userTable="usuarios"/>
     </Engine>
   </Service>
 </Server>

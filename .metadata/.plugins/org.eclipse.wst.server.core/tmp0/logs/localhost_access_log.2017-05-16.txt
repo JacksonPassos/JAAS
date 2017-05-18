@@ -386,3 +386,14 @@
 0:0:0:0:0:0:0:1 - - [16/May/2017:21:24:39 -0300] "GET /gerenciador/ HTTP/1.1" 200 658
 0:0:0:0:0:0:0:1 - - [16/May/2017:21:24:39 -0300] "GET /gerenciador/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
 0:0:0:0:0:0:0:1 - - [16/May/2017:21:24:39 -0300] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [16/May/2017:23:56:36 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:56:47 -0300] "GET /gerenciador HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:56:47 -0300] "GET /gerenciador/ HTTP/1.1" 200 658
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:56:47 -0300] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:56:50 -0300] "GET /gerenciador/ HTTP/1.1" 200 658
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:56:50 -0300] "GET /gerenciador/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:56:50 -0300] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:56:52 -0300] "GET /gerenciador/admin/restricted.jsp HTTP/1.1" 200 7127
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:56:58 -0300] "POST /gerenciador/admin/j_security_check HTTP/1.1" 200 594
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:57:05 -0300] "GET /gerenciador/user/allowed.jsp HTTP/1.1" 200 7127
+0:0:0:0:0:0:0:1 - - [16/May/2017:23:57:13 -0300] "POST /gerenciador/user/j_security_check HTTP/1.1" 200 594

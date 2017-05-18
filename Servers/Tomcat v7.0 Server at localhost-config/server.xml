@@ -110,13 +110,6 @@
              available for use by the Realm.  -->
         <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
       </Realm>
-      
-       <Realm className="org.apache.catalina.realm.JDBCRealm"
-			driverName="org.gjt.mm.mysql.Driver" digest="MD5"
-			connectionURL="jdbc:mysql://localhost:3306/jaas"
-			connectionName="root" connectionPassword=""
-			userTable="usuarios" userNameCol="usu_login" userCredCol="usu_pass"
-			userRoleTable="usupap" roleNameCol="pap_descricao"/>
 
       <Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true">
 
@@ -132,6 +125,12 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
       <Context docBase="gerenciador" path="/gerenciador" reloadable="true" source="org.eclipse.jst.jee.server:gerenciador"/><Context docBase="project-to-learn-jaas-complete" path="/project-to-learn-jaas-complete" reloadable="true" source="org.eclipse.jst.jee.server:project-to-learn-jaas-complete"/></Host>
+      <Realm className="org.apache.catalina.realm.JDBCRealm"
+			driverName="org.gjt.mm.mysql.Driver" digest="MD5"
+			connectionURL="jdbc:mysql://localhost:3306/jaas"
+			connectionName="root" connectionPassword=""
+			userTable="usuarios" userNameCol="usu_login" userCredCol="usu_pass"
+			userRoleTable="usupap" roleNameCol="pap_descricao"/>
     </Engine>
   </Service>
 </Server>
