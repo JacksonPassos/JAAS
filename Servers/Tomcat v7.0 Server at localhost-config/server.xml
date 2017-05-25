@@ -126,7 +126,7 @@
 
       <Context docBase="gerenciador" path="/gerenciador" reloadable="true" source="org.eclipse.jst.jee.server:gerenciador"/><Context docBase="project-to-learn-jaas-complete" path="/project-to-learn-jaas-complete" reloadable="true" source="org.eclipse.jst.jee.server:project-to-learn-jaas-complete"/></Host>
       <Realm className="org.apache.catalina.realm.JDBCRealm"
-			driverName="org.gjt.mm.mysql.Driver" digest="MD5"
+			driverName="com.mysql.jdbc.Driver" digest="MD5"
 			connectionURL="jdbc:mysql://localhost:3306/jaas"
 			connectionName="root" connectionPassword=""
 			userTable="usuarios" userNameCol="usu_login" userCredCol="usu_pass"
